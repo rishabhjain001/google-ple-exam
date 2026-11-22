@@ -1,0 +1,24 @@
+# ============================================================================
+# Google - Agent Harness on Physical-Engineering's Last Exam (PLE)
+# Submission Configuration
+# ============================================================================
+
+name: ple-autonomous-engineer-harness
+
+# Model API: Target one of the official Google-sponsored models:
+# 1. google-cloud/claude-opus-5-5       (Flagship multi-modal engineering reasoning)
+# 2. google-cloud/gemini-4-argon        (Frontier long-context Google model)
+# 3. google-cloud/gemini-3.8-flash      (Ultra-fast high-volume reasoning)
+# 4. google-cloud/qwen3-coder-480b      (Large-scale coding & math model)
+model_api: google-cloud/claude-opus-5-5
+
+# Installation executed at Docker build time (internet enabled, runs as root)
+install: >-
+  uv venv --python 3.12 /opt/harness/venv &&
+  uv pip install --python /opt/harness/venv/bin/python -r {src}/requirements.txt
+
+# Server startup command launched by the evaluator container
+serve: /opt/harness/venv/bin/python {src}/serve.py
+
+env:
+  LOG_LEVEL: "info"
