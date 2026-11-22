@@ -1,5 +1,6 @@
-# 🏗️ PLE Autonomous Physical Engineer Agent Harness
+# 🏗️ Google - Agent Harness on Physical-Engineering's Last Exam (PLE)
 
+**GitHub Repository**: [rishabhjain001/google-ple-exam](https://github.com/rishabhjain001/google-ple-exam)  
 **Competition**: [Google - Agent Harness on Physical-Engineering's Last Exam (Kaggle)](https://www.kaggle.com/competitions/physical-engineerings-last-exam)  
 **Prize Pool**: **$400,000 USD** (1st: $250,000 | 2nd: $100,000 | 3rd: $50,000)  
 **Submission Deadline**: **January 5 / 6, 2027**  
